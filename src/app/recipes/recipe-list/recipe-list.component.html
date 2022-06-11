@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-recipe-item *ngFor="let i of recipes" [recipe]="i" (recipeSelected)="onRecipeSelected(i)">
+            <!--proprietatea componentei recipe-item este asociata cu obiectele din recipes -->
+        </app-recipe-item>
+    </div>
+</div>
