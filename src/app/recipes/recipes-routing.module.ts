@@ -8,7 +8,7 @@ import { RecipeStartComponent } from "./recipe-start/recipe-start.component";
 import { RecipesComponent } from "./recipes.component";
 
 const routele: Routes = [
-    { path: 'recipes', component: RecipesComponent,
+    { path: '', component: RecipesComponent,
     canActivate: [AuthGuardService],
     children: [
         { path: '', component: RecipeStartComponent },

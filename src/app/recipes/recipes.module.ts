@@ -24,4 +24,4 @@ import { RecipesComponent } from './recipes.component';
     ReactiveFormsModule,
   ],
 })
-export class RecipesModules {}
+export class RecipesModule {}
